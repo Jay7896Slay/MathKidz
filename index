@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='style 1.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div id="register">
+        <form>
+            <h1> Register </h1>
+                <span class="username">
+                    <div class="input-box">
+                        <input type="text" id="fname" placeholder="First Name">
+                        <p></p>
+                    </div>
+                <div class="input-box">
+                    <input type="text" id="lname" placeholder="Last Name">
+                    <p></p>
+                </div>
+                </span>
+            <div class="input-box">
+                <input type="text" id="email" placeholder="Email">
+                <i class='bx bxs-envelope'></i>
+                <p></p>
+            </div>
+            <span class="userdob">
+                <div class="input-box">
+                    <label> Date of Birth: </label>
+                    <input type="date" id="dob">
+                    <p></p>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="age" placeholder="Age" min="8" max="12" disabled>
+                    <p></p>
+                </div>
+            </span>
+            <div class="input-box">
+                <input type="text" id="gender" placeholder="Gender">
+                <i class='bx bx-body'></i>
+                <p></p>
+            </div>   
+            <div class="input-box">
+                <input type="password" id="userpass" placeholder="Password">
+                <i class='bx bxs-lock-alt'></i>
+                <p></p>
+            </div>   
+            <div class="forget-pass">
+                <label><input type="checkbox">Remember Me?</label>
+                <a href="#"> Forgot Password? </a>
+            </div>
+        <button id="loginBtn">Start</button>
+    </form>
+
+
+<div class="quiz-content">
+    <div class="quiz">
+        <div class="entry-form">
+            <button class="btn" id="startBtn" style="display: none;">Start</button>
+            <div class="play-area">
+              <div class="question"> <div class="questionText"> Question <span class="questionNumber"> </span> </div> 
+            
+              <div class="score"></div>
+                <p class="equation" id="equation"></p>
+            
+                <label for="userAnswer"> Enter Your Reponse: </label>
+              <input type="text" class="intext11" id="userAnswer">
+            <div class="alert"></div>
+                
+                </div>
+                <span>
+                <button class="btn" id="nextBtn">Next</button></span>
+          <button class="btn" id="endBtn">End</button>
+        </div>
+<div id="alert"> </div>
+        <div class="response-area">
+<!-- Coded by Jada Johnson -->
+            <h2>Quiz Completed</h2>
+          <div class="circle-display">
+            <span class="percentage-value"></span>
+            </div>
+          <div class="scoreCard"></div>
+          <br>
+            <ul class="response-list" id="responseList"></ul>
+          <span>
+          <button class="btn" id="restartBtn">Play Again</button>
+            <button class="btn" id="globalBtn">Leaderboard</button>
+            </span>
+        </div>
+    </div>
+      </div>
+    </div>
+</div>
+<div id="world-status" class="leaderboard">
+    <caption class="header"> Leaderboard </caption>
+	<table width="1200" id="showpercentage">
+		<tr>
+      <div class="table-header">
+		  <td>First Name</td>
+		  <td>Last Name</td>
+		  <td>Age</td>
+		  <td>Total</td>
+		  <td>Correct Answers</td>
+		  <td>Wrong Answers</td>
+      <td>Date</td>
+		  <td>Percentage</td>
+        </div>
+		</tr>
+	  </table>
+	</div>
+  
+  <div id="world-status" class="globalplayers">
+    <caption class="header"> Global Players </caption>
+	<table width="1200" id="showallplayers">
+		<tr>
+      <div class="table-header">
+		  <td>First Name</td>
+		  <td>Last Name</td>
+		  <td>Age</td>
+      <td>Questions</td>
+		  <td>Answers</td>
+		  <td>Answer Status</td>
+		  <td>Percentage</td>
+        </div>
+		</tr>
+	  </table>
+	</div>
+  <div id="showcharts"></div>
+  <!-- Coded by Jada Johnson and Savhanna Hill -->
+</div>
+    <script src="script 1.js" defer></script>
+</body>
+</html>
+
+<!--Coded by Jada Johnson, Othneil Brown, Savhanna Hill-->
